@@ -1,0 +1,193 @@
+/* Contact Hero */
+.contact-hero {
+    margin-top: 80px;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.95) 0%, rgba(107, 53, 15, 0.95) 100%);
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/living-room-1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero-content h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-hero-content p {
+    color: #f5f5f5;
+    font-size: 1.3rem;
+}
+
+/* Contact Content */
+.contact-content {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h2 {
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-header p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+    border: 1px solid rgba(139, 69, 19, 0.08);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(139, 69, 19, 0.2);
+}
+
+.contact-card-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+    transform: scale(1.1);
+}
+
+.whatsapp-card .contact-card-icon {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+}
+
+.email-card .contact-card-icon {
+    background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
+    box-shadow: 0 8px 25px rgba(234, 67, 53, 0.3);
+}
+
+.phone-card .contact-card-icon {
+    background: linear-gradient(135deg, #8B4513 0%, #6B350F 100%);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+}
+
+.location-card .contact-card-icon {
+    background: linear-gradient(135deg, #4285F4 0%, #3367D6 100%);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
+}
+
+.contact-card h3 {
+    color: #8B4513;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-card span {
+    color: #555;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.contact-number,
+.contact-email,
+.contact-location {
+    color: #8B4513;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-card {
+        padding: 35px 25px;
+    }
+
+    .contact-card-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2.2rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-card span {
+        font-size: 1rem;
+    }
+}
